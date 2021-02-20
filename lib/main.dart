@@ -10,7 +10,11 @@ class FlutterBootcamp extends StatelessWidget{
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(Strings.titletext),
+          title: Text(Strings.titletext,
+            style: TextStyle(
+              fontFamily: 'ArchitectsDaughter'
+            ),
+          ),
           backgroundColor: Colors.deepOrange,
           centerTitle: true,
         ),
