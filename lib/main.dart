@@ -18,16 +18,64 @@ class FlutterBootcamp extends StatelessWidget{
           backgroundColor: Colors.deepOrange,
           centerTitle: true,
         ),
-        body: Center(
-          child: Text(Strings.bodytext,
-          style: TextStyle(
-            color: Colors.deepOrange,
-            fontSize: 30,
-            fontFamily: 'ArchitectsDaughter',
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                    color: Colors.grey,
+                    child: Text("Skillto"),
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10)
+                ),
+                FlatButton(
+                  child: Text( "Education"),
+                  onPressed: () {},
+                  color: Colors.deepOrange,
+                ),
+                FlatButton(
+                  child: Text( "Solutions"),
+                  onPressed: () {},
+                  color: Colors.blue,
+                ),
+              ],
             ),
-          ),
-        ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                    color: Colors.grey,
+                    child: Text("Skillto"),
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10)
+                ),
+                FlatButton(
+                  child: Text( "Education"),
+                  onPressed: () {},
+                  color: Colors.deepOrange,
+                ),
+                FlatButton(
+                  child: Text( "Solutions"),
+                  onPressed: () {},
+                  color: Colors.blue,
+                ),
+              ],
+            ),
 
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(
+            Icons.alternate_email,
+            size: 30,
+          ),
+          backgroundColor: Colors.deepOrange,
+          onPressed: (){
+            print("I was Clicked");
+          },
+        ),
       ),
     );
   }
