@@ -1,16 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class NewLocation extends StatefulWidget{
+class NewLocation extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    @override
-    Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text("You're on New Location"),
-        ),
-      );
-    }
+  _NewLocation createState() => _NewLocation();
+
+}
+
+class _NewLocation extends State<NewLocation>{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.deepOrange,
+        title: Text("New Location"),
+      ),
+      body: Container(
+        child: Text("This is your New page"),
+      ),
+    );
   }
 }
