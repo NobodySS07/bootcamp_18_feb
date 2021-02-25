@@ -18,63 +18,98 @@ class FlutterBootcamp extends StatelessWidget{
           backgroundColor: Colors.deepOrange,
           centerTitle: true,
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Column(
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //crossAxisAlignment: CrossAxisAlignment.stretch,
+            Row(
               children: [
-                Container(
-                    color: Colors.grey,
-                    child: Text("Skillto"),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10)
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.deepOrange,
+                    child: Text("A"),
+                  ),
                 ),
-                FlatButton(
-                  child: Text( "Education"),
-                  onPressed: () {},
-                  color: Colors.deepOrange,
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.blue,
+                    child: Text("B"),
+                  ),
                 ),
-                FlatButton(
-                  child: Text( "Solutions"),
-                  onPressed: () {},
-                  color: Colors.blue,
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.green,
+                    child: Text("C"),
+                  ),
                 ),
               ],
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //crossAxisAlignment: CrossAxisAlignment.stretch,
+            Divider(
+              color: Colors.amber,
+            ),
+            Row(
               children: [
-                Container(
-                    color: Colors.grey,
-                    child: Text("Skillto"),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10)
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.deepOrange,
+                    child: Text("A"),
+                  ),
                 ),
-                FlatButton(
-                  child: Text( "Education"),
-                  onPressed: () {},
-                  color: Colors.deepOrange,
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.blue,
+                    child: Text("B"),
+                  ),
                 ),
-                FlatButton(
-                  child: Text( "Solutions"),
-                  onPressed: () {},
-                  color: Colors.blue,
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.green,
+                    child: Text("C"),
+                  ),
                 ),
               ],
             ),
-
+            SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/star.jpg'),
+                    radius: 50,
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.blue,
+                    child: Text("B"),
+                  ),
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    color: Colors.green,
+                    child: Text("C"),
+                  ),
+                ),
+              ],
+            ),
           ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(
-            Icons.alternate_email,
-            size: 30,
-          ),
-          backgroundColor: Colors.deepOrange,
-          onPressed: (){
-            print("I was Clicked");
-          },
         ),
       ),
     );
